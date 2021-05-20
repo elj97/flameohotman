@@ -14,14 +14,6 @@ public class ScreenShakeController : MonoBehaviour
     {
         instance = this;
     }
-    void Update()
-    {
-        if ( Input.GetKeyDown(KeyCode.K) )
-        {
-            StartShake(.2f, .2f);
-        }
-
-    }
 
     private void LateUpdate()
     {

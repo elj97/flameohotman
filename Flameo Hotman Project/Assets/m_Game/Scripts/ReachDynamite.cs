@@ -20,6 +20,8 @@ public class ReachDynamite : MonoBehaviour
     public GameObject explosionEffect;
     public GameObject secondaryExplosionEffect;
 
+    private ScreenShakeController screenShake;
+
     [HideInInspector]
     public bool isLevel = true;
 
@@ -31,6 +33,7 @@ public class ReachDynamite : MonoBehaviour
     {
         Coroutine = ChangeScenes();
         soundEffects = GameObject.FindGameObjectWithTag("GameController").GetComponent<SFX>();
+        screenShake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ScreenShakeController>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,6 +60,8 @@ public class ReachDynamite : MonoBehaviour
         {
             StaticSettings.levelsCompleted = levelNumber + 1;
         }
+        //Shake
+        screenShake.StartShake(.2f, .2f);
         //Play Sound
         soundEffects.PlayExplosion();
         //Animate TNT
