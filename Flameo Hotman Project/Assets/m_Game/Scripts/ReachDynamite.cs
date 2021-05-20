@@ -43,11 +43,12 @@ public class ReachDynamite : MonoBehaviour
             }
         }
     }
-
+/*
     private void Update()
     {
         print("Levels Completed: " + StaticSettings.levelsCompleted);
     }
+*/
 
     IEnumerator ChangeScenes()
     {
