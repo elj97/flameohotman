@@ -6,14 +6,7 @@ public class FlameController : MonoBehaviour
 {
     public float speed;
     public float rotationOffset;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Vector3 mousePos = Input.mousePosition;

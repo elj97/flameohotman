@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 46609739}
   - component: {fileID: 46609741}
   m_Layer: 0
-  m_Name: monster
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf2c9055e568b54f9d956b9b5c6491c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  rotationOffset: 270
+  speed: 20
+  rotationOffset: 0
 --- !u!1 &206017392
 GameObject:
   m_ObjectHideFlags: 0
