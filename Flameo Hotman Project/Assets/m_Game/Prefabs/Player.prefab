@@ -49,7 +49,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!50 &5890534913949123808
 Rigidbody2D:
   serializedVersion: 4
@@ -85,6 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationOffset: 0
+  followingCursor: 0
   flameEffect: {fileID: 1321424891948844827, guid: 969076b2ce541c8468b9cdb6ca653710, type: 3}
 --- !u!114 &5890534913949123837
 MonoBehaviour:
